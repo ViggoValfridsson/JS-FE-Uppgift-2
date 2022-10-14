@@ -1,79 +1,80 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 header {
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    border-bottom: 1px solid rgb(87, 87, 87);
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-bottom: 1px solid rgb(87, 87, 87);
 }
 
 .flex-container {
-    display: flex;
-    height: 1400px;
-    flex-direction: column;
-    align-items: center;
-    background: url("../img/pexels-pixabay-235615.jpg") no-repeat center center/ cover;
+  display: flex;
+  height: 1400px;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/pexels-pixabay-235615.jpg") no-repeat center center/ cover;
 }
 
 .accordian {
-    margin: 30px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgb(87, 87, 87);
-    border-radius: 5px;
-    box-shadow: 0 0 10px;
+  margin: 30px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
 }
 
 .h2-faq {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .accordian .accordian-container .question {
-    font-size: 20px;
-    padding: 18px 0px;
-    cursor: pointer;
-    border-bottom: 1px solid black;
-    position: relative;
-    transition: 0.5s;
+  font-size: 20px;
+  padding: 18px 0px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  position: relative;
+  transition: 0.5s;
 }
 
 .accordian .accordian-container .answer {
-    padding: 20px 15px 0 15px;
-    height: 0px;
-    width: 100%;
-    overflow: hidden;
-    transition: .5s;
+  padding: 20px 15px 0 15px;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .accordian .accordian-container .question::after {
-    content: "+";
-    position: absolute;
-    right: 0px;
-    transition: .5s;
+  content: "+";
+  position: absolute;
+  right: 0px;
+  transition: 0.5s;
 }
-       /* Trigger change with JS-styling; classList.toggle()*/
+/* Trigger change with JS-styling; classList.toggle()*/
 .accordian .accordian-container.active .answer {
-    height: 70px;
-    overflow: auto;
+  height: 70px;
+  overflow: auto;
 }
 
-        /* Trigger change with JS-styling; classList.toogle()*/ 
+/* Trigger change with JS-styling; classList.toogle()*/
 .accordian .accordian-container.active .question {
-    font-size: 14px;
-    transition: .5s;
+  font-size: 14px;
+  transition: 0.5s;
 }
 
-        /* Trigger change with JS-styling; classList.toggle() */
+/* Trigger change with JS-styling; classList.toggle() */
 .accordian .accordian-container.active .question::after {
-    content: "-";
-    transition: .5s;
+  content: "-";
+  transition: 0.5s;
 }
+
