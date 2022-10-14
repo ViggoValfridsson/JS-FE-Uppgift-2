@@ -68,7 +68,6 @@ header {
 
         /* Trigger change with JS-styling; classList.toogle()*/ 
 .accordian .accordian-container.active .question {
-    font-size: 14px;
     transition: .5s;
 }
 
